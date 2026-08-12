@@ -45,7 +45,6 @@ RESET=`tput sgr0`
 
 #----------------------------------------------------start--------------------------------------------------#
 
-echo "${BG_MAGENTA}${BOLD}Starting Execution - Sparkwave Dev Cloud Tutorials${RESET}"
 
 # Create Spanner instance
 echo "${CYAN}${BOLD}Creating Spanner instance: banking-ops-instance${RESET}"
@@ -183,8 +182,4 @@ echo "${CYAN}${BOLD}Updating database schema${RESET}"
 gcloud spanner databases ddl update banking-ops-db --instance=banking-ops-instance \
   --ddl='ALTER TABLE Category ADD COLUMN MarketingBudget INT64;'
 
-# Completion message
-echo "${BG_RED}${BOLD}Lab Completed Successfully - ManavYugAI${RESET}"
 
-
-#-----------------------------------------------------end----------------------------------------------------------#
