@@ -23,18 +23,12 @@ BG_MAGENTA=$(tput setab 5)
 
 
 clear
-echo "${BG_BLUE}${BOLD}${WHITE}==================================================${RESET}"
-echo "${BG_BLUE}${BOLD}${WHITE}   MANAVYUG AI       ${RESET}"
-echo "${BG_BLUE}${BOLD}${WHITE}==================================================${RESET}"
-echo ""
-echo "${CYAN}${BOLD}⚡MEOW${RESET}"
 
 echo ""
 
 # ======================
 #  DATABASE OPERATIONS
 # ======================
-echo "${MAGENTA}${BOLD}💼 STEP 1: Setting Up Portfolios...${RESET}"
 declare -A PORTFOLIOS=(
     [1]="Banking,Bnkg,All Banking Business"
     [2]="Asset Growth,AsstGrwth,All Asset Focused Products"
@@ -51,10 +45,7 @@ done
 echo "${GREEN}${BOLD}✔ Portfolios created successfully${RESET}"
 echo ""
 
-# ======================
-#  CATEGORY SETUP
-# ======================
-echo "${MAGENTA}${BOLD}🗂️ STEP 2: Creating Product Categories...${RESET}"
+
 declare -A CATEGORIES=(
     [1]="1,Cash"
     [2]="2,Investments - Short Return"
@@ -75,7 +66,6 @@ echo ""
 # ======================
 #  PRODUCT SETUP
 # ======================
-echo "${MAGENTA}${BOLD}🛒 STEP 3: Adding Financial Products...${RESET}"
 declare -A PRODUCTS=(
     [1]="1,1,Checking Account,ChkAcct,Banking LOB"
     [2]="2,2,Mutual Fund Consumer Goods,MFundCG,Investment LOB"
@@ -101,7 +91,6 @@ echo ""
 # ======================
 #  PYTHON HELPER SCRIPTS
 # ======================
-echo "${MAGENTA}${BOLD}🐍 STEP 4: Running Python Helper Scripts...${RESET}"
 echo "${WHITE}Setting up Python environment...${RESET}"
 mkdir -p python-helper && cd python-helper || {
     echo "${RED}${BOLD}❌ Failed to create python-helper directory${RESET}"
@@ -141,6 +130,4 @@ echo ""
 echo "${WHITE}${BOLD}🔍 Access your Cloud Spanner database at:${RESET}"
 echo "${BLUE}https://console.cloud.google.com/spanner/instances/banking-ops-instance/databases/banking-ops-db${RESET}"
 echo ""
-echo "${CYAN}${BOLD}💡 For more Google Cloud labs and tutorials:${RESET}"
 
-echo "${GREEN}${BOLD}🔔 Don't forget to subscribe for daily cloud tutorials!${RESET}"
