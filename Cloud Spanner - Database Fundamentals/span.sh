@@ -45,6 +45,6 @@ gcloud spanner databases ddl update banking-db --instance=banking-instance --ddl
   Location STRING(MAX) NOT NULL,
 ) PRIMARY KEY (CustomerId);"
 
-echo "${BG_RED}${BOLD}Congratulations For Completing The Lab !!!${RESET}"
+echo "${BG_RED}${BOLD}Doneeeee !!!${RESET}"
 
 #-----------------------------------------------------end----------------------------------------------------------#
