@@ -1,12 +1,5 @@
 # Establish VPC to VPC Connectivity using NCC
 
-Download the script:
-
-```bash
-curl -LO https://raw.githubusercontent.com/cloudbypriyank/Google-A2026/main/Establish%20VPC%20to%20VPC%20Connectivity%20using%20NCC/span.sh
-chmod +x span.sh
-./span.sh
-```
 
 Set your lab-specific values before running it:
 
