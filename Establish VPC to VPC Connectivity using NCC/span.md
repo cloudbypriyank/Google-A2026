@@ -22,4 +22,21 @@ chmod +x span.sh
 ./span.sh
 ```
 
+```bash
+CREATE DATABASE company;
+\l
+\c company
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    first VARCHAR(255) NOT NULL,
+    last VARCHAR(255) NOT NULL,
+    salary DECIMAL(10,2)
+);
+INSERT INTO employees (first, last, salary) VALUES
+    ('Max', 'Mustermann', 5000.00),
+    ('Anna', 'Schmidt', 7000.00),
+    ('Peter', 'Mayer', 6000.00);
+SELECT * FROM employees;
+\q
+```
 > Replace the values above if your lab uses different VPC names, subnet ranges, or Cloud SQL instance names.
